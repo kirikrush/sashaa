@@ -1,0 +1,39 @@
+body{
+  width: 100%;
+  overflow: hidden;
+}
+
+h1{
+  position: relative;
+  overflow: hidden;
+  transition: 1s linear all;
+  font-size: 56px;
+}
+
+.one{
+  left:-5000px;
+  transition: 1s linear all;
+
+  color: brown;
+}
+
+.two{
+  left:5000px;
+  transition: 2s linear all;
+  color: blueviolet
+}
+
+.three{
+  left:-5000px;
+  transition: 3s linear all;
+  display: inline-block;
+  color: green;
+}
+
+html:hover h1{
+  left:45%;
+}
+
+html:hover .three{
+  transform: rotate(2160deg)
+}
